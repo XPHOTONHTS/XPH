@@ -21,145 +21,159 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link rel="icon" href="logo.png" />
+    <link rel="icon" href="/logo.png" />
     <script
       src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.0/dist/alpine.min.js"
       defer
     ></script>
+    <style>
+      .bg-image {
+        background-image: url("/images/background.jpg");
+        background-size: cover;
+        background-position: center;
+        /* Add the following properties */
+        opacity: 1; /* Adjust as needed for desired transparency */
+        backdrop-filter: blur(90px); /* Adjust blur value as needed */
+      }
+    </style>
   </head>
   <body class="bg-gray-900 text-white font-sans">
     <!-- Header -->
-    <header class="bg-gray-800">
-      <div
-        class="container mx-auto px-6 py-3 flex justify-between items-center"
-      >
-        <div class="flex items-center">
-          <!-- Logo Image -->
-          <img
-            src="logo.png"
-            alt="XPHOTON Logo"
-            class="h-8 w-8 mr-2 rounded-full"
-          />
-          <!-- Site Title -->
-          <a
-            target="black"
-            href="https://www.saucerswap.finance/swap/HBAR/0.0.4351436"
-            class="text-white font-semibold text-lg"
-            >XPHOTON</a
-          >
+    <section class="bg-image">
+      <header>
+        <div
+          class="container mx-auto px-6 py-3 flex justify-between items-center"
+        >
+          <div class="flex items-center">
+            <!-- Logo Image -->
+            <img
+              src="/logo.png"
+              alt="XPHOTON Logo"
+              class="h-8 w-8 mr-2 rounded-full"
+            />
+            <!-- Site Title -->
+            <a
+              target="black"
+              href="https://www.saucerswap.finance/swap/HBAR/0.0.4351436"
+              class="text-white font-semibold text-lg"
+              >XPHOTON</a
+            >
+          </div>
+          <nav class="space-x-4 text-gray-300 text-sm sm:text-base flex">
+            <a
+              href="https://twitter.com/XPHOTONHTS"
+              target="_blank"
+              class="hover:text-white px-1 sm:px-2 py-1 rounded transition duration-300"
+            >
+              <i class="fab fa-twitter text-2xl"></i>
+            </a>
+            <a
+              href="https://discord.gg/awbApY2yeR"
+              target="_blank"
+              class="hover:text-white px-1 sm:px-2 py-1 rounded transition duration-300"
+            >
+              <i class="fab fa-discord text-2xl"></i>
+            </a>
+          </nav>
         </div>
-        <nav class="space-x-4 text-gray-300 text-sm sm:text-base flex">
-          <a
-            href="https://twitter.com/XPHOTONHTS"
-            target="_blank"
-            class="hover:text-white px-1 sm:px-2 py-1 rounded transition duration-300"
-          >
-            <i class="fab fa-twitter text-2xl"></i>
-          </a>
-          <a
-            href="https://discord.gg/awbApY2yeR"
-            target="_blank"
-            class="hover:text-white px-1 sm:px-2 py-1 rounded transition duration-300"
-          >
-            <i class="fab fa-discord text-2xl"></i>
-          </a>
-        </nav>
-      </div>
-    </header>
+      </header>
 
-    <!-- Hero Section -->
-    <section id="hero" class="bg-gray-800">
-      <div class="container mx-auto px-6 py-16 text-center">
-        <h1 class="text-4xl font-semibold text-white mb-4">
-          Welcome to XPHOTON
-        </h1>
+      <!-- Hero Section -->
+      <section id="hero">
+        <div class="container mx-auto px-6 py-16 text-center">
+          <h1 class="text-4xl font-semibold text-white mb-4">
+            Welcome to XPHOTON
+          </h1>
 
-        <p class="text-gray-300 mb-8">
-          XPHOTON is a new type of digital currency that's very rare and works
-          efficiently across Hedera ecosystem. <br />It's designed to be very
-          scarce (only 10 exist), which could make it valuable. It's also built
-          to work well with other digital currencies, making it versatile.
-        </p>
-        <div class="flex justify-center space-x-4">
-          <a
-            target="black"
-            href="https://www.saucerswap.finance/swap/HBAR/0.0.4351436"
-            class="flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
-            ><i class="fa-solid fa-money-bill-transfer mr-2"></i>Buy XPH</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <!-- Tokenomics Section -->
-    <section id="tokenomics" class="py-12 bg-gray-900">
-      <div class="container mx-auto px-6">
-        <div class="text-center">
-          <h2 class="text-3xl font-semibold text-white mb-2">
-            XPHOTON Tokenomics
-          </h2>
-          <p class="text-gray-400 text-xl mb-6">
-            A detailed look at the distribution and allocation of XPHOTON
-            tokens.
+          <p class="text-gray-100 mb-8 text-lg">
+            XPHOTON is a new type of digital currency that's very rare and works
+            efficiently across Hedera ecosystem. <br />It's designed to be very
+            scarce (only 10 exist), which could make it valuable. It's also
+            built to work well with other digital currencies, making it
+            versatile.
           </p>
+          <div class="flex justify-center space-x-4">
+            <a
+              target="black"
+              href="https://www.saucerswap.finance/swap/HBAR/0.0.4351436"
+              class="flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-green-600 hover:bg-green-700 md:py-4 md:text-lg md:px-10"
+              ><i class="fa-solid fa-money-bill-transfer mr-2"></i>Buy XPH</a
+            >
+          </div>
         </div>
-        <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
-          <div class="mb-8">
-            <h3 class="text-xl text-white font-semibold mb-2">Total Supply</h3>
-            <p class="text-gray-400">
-              The maximum supply is capped at
-              <span class="text-white font-semibold">10 tokens</span>, with each
-              token having
-              <span class="text-white font-semibold">17 decimals</span>,
-              ensuring ultra-scarcity.
+      </section>
+
+      <!-- Tokenomics Section -->
+      <section id="tokenomics" class="py-12">
+        <div class="container mx-auto px-6">
+          <div class="text-center">
+            <h2 class="text-3xl font-semibold text-white mb-2">
+              XPHOTON Tokenomics
+            </h2>
+            <p class="text-gray-100 text-xl mb-6">
+              A detailed look at the distribution and allocation of XPHOTON
+              tokens.
             </p>
           </div>
-          <div>
-            <h3 class="text-xl text-white font-semibold mb-4">
-              Allocation (Beta Stage)
-            </h3>
-            <div class="space-y-4">
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400">Dev Fund</span>
-                <span class="text-white font-semibold">1%</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400">Listing / Marketing</span>
-                <span class="text-white font-semibold">1%</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400">MOOfarmv1</span>
-                <span class="text-white font-semibold">1%</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400"
-                  >REECYCLE1.0 (Yield Farm / Rebuy / DAO)</span
-                >
-                <span class="text-white font-semibold">0.5%</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400"> REEallocatorv1</span>
-                <span class="text-white font-semibold">0.5%</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400">REEcentralizRv1</span>
-                <span class="text-white font-semibold">0.5%</span>
-              </div>
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400">PORhedge</span>
-                <span class="text-white font-semibold">0.5%</span>
-              </div>
-              <!-- Add more allocations as needed -->
-              <div class="flex justify-between items-center">
-                <span class="text-gray-400">Locked LP (Various Pair)</span>
-                <span class="text-white font-semibold">95%</span>
+          <div class="bg-gray-800 p-6 rounded-lg shadow-lg">
+            <div class="mb-8">
+              <h3 class="text-xl text-white font-semibold mb-2">
+                Total Supply
+              </h3>
+              <p class="text-gray-400">
+                The maximum supply is capped at
+                <span class="text-white font-semibold">10 tokens</span>, with
+                each token having
+                <span class="text-white font-semibold">17 decimals</span>,
+                ensuring ultra-scarcity.
+              </p>
+            </div>
+            <div>
+              <h3 class="text-xl text-white font-semibold mb-4">
+                Allocation (Beta Stage)
+              </h3>
+              <div class="space-y-4">
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Dev Fund</span>
+                  <span class="text-white font-semibold">1%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Listing / Marketing</span>
+                  <span class="text-white font-semibold">1%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">MOOfarmv1</span>
+                  <span class="text-white font-semibold">1%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400"
+                    >REECYCLE1.0 (Yield Farm / Rebuy / DAO)</span
+                  >
+                  <span class="text-white font-semibold">0.5%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400"> REEallocatorv1</span>
+                  <span class="text-white font-semibold">0.5%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">REEcentralizRv1</span>
+                  <span class="text-white font-semibold">0.5%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">PORhedge</span>
+                  <span class="text-white font-semibold">0.5%</span>
+                </div>
+                <!-- Add more allocations as needed -->
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Locked LP (Various Pair)</span>
+                  <span class="text-white font-semibold">95%</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </section>
-
     <!-- Liquidity Pairs Section -->
     <section id="liquidity-pairs" class="py-12 bg-gray-800">
       <div class="container mx-auto px-6">
