@@ -36,6 +36,26 @@
         backdrop-filter: blur(90px); /* Adjust blur value as needed */
       }
     </style>
+    <!-- Add this script block at the end of your HTML body -->
+    <script>
+      // Function to fetch token information
+      async function fetchTokenInfo() {
+        try {
+          const response = await fetch(
+            "https://api.saucerswap.finance/tokens/0.0.4351436"
+          );
+          const data = await response.json();
+          const price = Math.round(data.priceUsd * 5).toLocaleString();
+          // Update the price element
+          document.getElementById("tokenPrice").innerText = `($${price})`;
+        } catch (error) {
+          console.error("Error fetching token information", error);
+        }
+      }
+
+      // Call the function to fetch token information when the page loads
+      window.onload = fetchTokenInfo;
+    </script>
   </head>
   <body class="bg-gray-900 text-white font-sans">
     <!-- Header -->
@@ -132,7 +152,7 @@
               <h3 class="text-xl text-white font-semibold mb-4">
                 Allocation (Beta Stage)
               </h3>
-              <div class="space-y-4">
+              <div class="space-y-4 mb-6">
                 <div class="flex justify-between items-center">
                   <span class="text-gray-400">Dev Fund</span>
                   <span class="text-white font-semibold">1%</span>
@@ -167,6 +187,31 @@
                 <div class="flex justify-between items-center">
                   <span class="text-gray-400">Locked LP (Various Pair)</span>
                   <span class="text-white font-semibold">95%</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-400">Locked LP (Various Pair)</span>
+                  <span class="text-white font-semibold">95%</span>
+                </div>
+                <div class="text-center mt-6">
+                  <!-- Add this element where you want to display the price -->
+                  <h1 class="mb-6 text-3xl font-semibold">🔥50%🔥</h1>
+
+                  <h1 class="mb-10 text-2xl">
+                    🔥5 XPH Tokens
+                    <span
+                      id="tokenPrice"
+                      class="text-white font-semibold"
+                    ></span>
+                    are Burned🔥
+                  </h1>
+
+                  <a
+                    href="https://davincigraph.io/devs/burns/tokens/0.0.4351436?contractId=0.0.3158042&lockerId=0.0.4350200"
+                    target="_blank"
+                    class="text-gray-900 text-lg font-semibold p-4 bg-yellow-500 rounded-lg hover:bg-yellow-600 transition duration-300 ease-in-out transform hover:scale-105"
+                  >
+                    BURN PROOF
+                  </a>
                 </div>
               </div>
             </div>
