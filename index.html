@@ -45,7 +45,7 @@
             "https://api.saucerswap.finance/tokens/0.0.4351436"
           );
           const data = await response.json();
-          const price = Math.round(data.priceUsd * 5).toLocaleString();
+          const price = Math.round(data.priceUsd * 5.5).toLocaleString();
           // Update the price element
           document.getElementById("tokenPrice").innerText = `($${price})`;
         } catch (error) {
@@ -194,10 +194,10 @@
                 </div>
                 <div class="text-center mt-6">
                   <!-- Add this element where you want to display the price -->
-                  <h1 class="mb-6 text-3xl font-semibold">🔥50%🔥</h1>
+                  <h1 class="mb-6 text-3xl font-semibold">🔥55%🔥</h1>
 
                   <h1 class="mb-10 text-2xl">
-                    🔥5 XPH Tokens
+                    🔥5.5 XPH Tokens
                     <span
                       id="tokenPrice"
                       class="text-white font-semibold"
